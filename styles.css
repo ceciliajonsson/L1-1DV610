@@ -8,8 +8,9 @@ body {
     margin-right: auto;
     max-width: 600px;
     margin-top: 20vw;
-    min-height: 120px;
+    min-height: 160px;
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     border: #212121 solid 1px;
@@ -61,4 +62,12 @@ input {
     padding-left: 10px;
     font-family: "input-serif", sans-serif;
     font-style: normal;
+}
+h1 {
+    font-family: "input-serif", sans-serif;
+    font-style: normal;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
