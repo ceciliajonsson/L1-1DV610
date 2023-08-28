@@ -16,7 +16,7 @@ submitButton.addEventListener('click', () => {
     }
     userInput.style.display = 'none'
     userMessage.style.display = 'block'
-    welcomeMessage.textContent = `Welcome ${inputName.value}.`
+    welcomeMessage.textContent = `Welcome ${inputName.value}!`
     colorMessage.textContent =`The random color generated for you is ${randomColor()}.`
 
     changeBackgroundColor()
