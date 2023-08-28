@@ -1,3 +1,7 @@
-.welcome-message {
+#content-holder {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+#user-message {
     display: none;
 }

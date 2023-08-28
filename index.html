@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <title>L1-1DV610</title>
@@ -11,13 +10,21 @@
 </head>
 
 <body>
-    <div id="user-input">
-        <label for="input">Enter your name:</label>
-        <br />
-        <input type="text" id="input-name" />
-        <button id="submit-button">Submit</button>
+    <div id="content-holder">
+        <div id="user-input">
+            <label for="input">Enter your name:</label>
+            <br />
+            <input type="text" id="input-name" />
+            <button id="submit-button">Submit</button>
+        </div>
+        <div id="user-message">
+            <p id="welcome-message"></p>
+            <p id="color-message"></p>
+
+            <button id="change-color-button">Change color</button>
+        </div>
     </div>
-    <div id="welcome-message"></div>
+
 </body>
 
 </html>
