@@ -6,11 +6,13 @@ const userMessage = document.getElementById('user-message')
 const welcomeMessage = document.getElementById('welcome-message')
 const colorMessage = document.getElementById('color-message')
 const changeColorButton = document.getElementById('change-color-button')
+const changeNameButton = document.getElementById('change-name-button')
+
 
 submitButton.addEventListener('click', () => {
     if (inputName.value === '') {
         alert('Please enter your name')
-        return;
+        return
     }
     userInput.style.display = 'none'
     userMessage.style.display = 'block'
@@ -19,18 +21,25 @@ submitButton.addEventListener('click', () => {
 
     changeBackgroundColor()
 
-});
+})
+
+
+changeNameButton.addEventListener('click', () => {
+    userInput.style.display = 'block'
+    userMessage.style.display = 'none'
+    inputName.value = ''
+})
 
 changeColorButton.addEventListener('click', () => {
 
     changeBackgroundColor()
             colorMessage.textContent =`The random color generated for you is ${randomColor()}.`
 
-});
+})
 function changeBackgroundColor() {
     const color = randomColor()
     document.body.style.backgroundColor = color
-    return color; 
+    return color;
 }
 
 function randomColor() {
